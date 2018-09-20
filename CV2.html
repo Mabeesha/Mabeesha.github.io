@@ -5,28 +5,70 @@
 	<head>
 		<title>CV</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="aos.css" rel="stylesheet">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-		<link rel="stylesheet" type="text/css" href="D:/COM/Other/Web Developing/CV/styles.css">
-		<script src="D:/COM/Other/Web Developing/CV/scriptes.js"></script>
+		<link rel="stylesheet" href="styles.css" type="text/css" >
+		<script src="aos.js"></script>
+		<script src="scriptes.js"></script>
+		
+		
 	</head>
 	
 	<body onload="onLoadChangeOpacity()">
 		
-		<div class="top" id="divTop">
-			<img class="avatar" src="me.png" alt="Me">
-			<h2>MABEESHA WIJEKOON</h2>
+		<div id="divTop">
+			<img class="avatar" src="Images/me.png" alt="Me">
+			<h1>MABEESHA WIJEKOON</h1>
 			<h3 class="email top">mabeesharj@gmail.com , mabeesha.wijekoon@eng.pdn.ac.lk</h3>
 			<h3 class="tel top"> +94774122984</h3>
 			<h3 class="add top"> 44/2, Pallegunnepana, Polgolla, Kandy, Sri Lanka.</h3>
-			<a href="https://github.com/Mabeesha"><i class="fa fa-github gf" style="margin-left: 41%;margin-right: 10%"></i></a>
+			<a href="https://github.com/Mabeesha"><i class="fa fa-github gf"></i></a>&nbsp&nbsp&nbsp&nbsp
 			<a href="https://www.facebook.com/mabeesha"><i class="fa fa-facebook gf" ></i></a>
 		</div>
 
 		<div class="intro" id="divIntro">
-			<p class="intro">Hello! I am a undergraduate of unversity of peradeniya, currently pursuing Bsc. Eng in Computer Engineering. I am passionate about Machine Learning and Artificial Inteligence, Softwear and Web Development, Algorithmic programming.</p>
+			<p class="normal">Hello! I am a undergraduate of unversity of peradeniya, currently pursuing Bsc. Eng in Computer Engineering. I am passionate about Machine Learning and Artificial Inteligence, Softwear and Web Development, Algorithmic programming.</p>
 			<hr style="background-color: rgb(220,220,220);border: 0;height: 1px">
 			<a class="downloadCV" href="/images/myw3schoolsimage.jpg" download>Download CV</a>
 		</div>
+
+		<div class="content" id="divEducation"  data-aos="fade-up" data-aos-duration="1000">
+			<h2 class="main">Education</h2>
+			<hr style="background-color: rgb(220,220,220);border: 0;height: 1px">
+			<h2 class="sub schoolIcon">Dharmaraja College, Kandy, SriLanka (2004 - 2014).</h2>
+			<h2 class="sub schoolIcon">University of Peradeniya, SriLanka (2015 - present).</h2>
+			<ul style="list-style-type: none;">
+				<li><h2 class="sub">Currently pursuing Bsc. Eng in Computer Engineering.</h2></li>
+				<li><h2 class="sub">Current GPA - 3.65/4.</h2></li>
+			</ul>
+        </div>
+
+		<div class="content" id="divSkills" data-aos="fade-up" data-aos-duration="1000">
+			<h2 class="main">Skills</h2>
+			<hr style="background-color: rgb(220,220,220);border: 0;height: 1px">
+			<ul class="bargraph">
+				<li class="reddeep" data-aos="fade-right" data-aos-once="false">JAVA</li>
+				<li class="redpink" data-aos="fade-right" data-aos-once="false">C</li>
+				<li class="pink" data-aos="fade-right" data-aos-once="false">Python</li>
+				<li class="orangered" data-aos="fade-right" data-aos-once="false">HTML/CSS</li>
+				<li class="orange" data-aos="fade-right" data-aos-once="false">Javascript</li>
+				<li class="yellow" data-aos="fade-right" data-aos-once="false">MySQL</li>
+				<li class="green" data-aos="fade-right" data-aos-once="false">PHP</li>
+				<li class="greenbright" data-aos="fade-right" data-aos-once="false">Matlab</li>
+				<li class="greenblue" data-aos="fade-right" data-aos-once="false">Arduino</li>
+			</ul>
+		</div>
+
+		<div class="content" id="divProjects" data-aos="fade-up" data-aos-duration="1000">
+			<h2 class="main">Projects</h2>
+			<hr style="background-color: rgb(220,220,220);border: 0;height: 1px">
+		</div>
+
+		<div class="content" id="divProjects" data-aos="fade-up" data-aos-duration="1000">
+			<h2 class="main">Projects</h2>
+			<hr style="background-color: rgb(220,220,220);border: 0;height: 1px">
+		</div>
+		
 
 		
 		<!--	
@@ -90,6 +132,9 @@
 
 			</ul>
 		-->
+		<script>
+ 			 AOS.init();
+		</script>
 	</body>
 
 </html>
