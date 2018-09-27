@@ -10,11 +10,19 @@
 		<link rel="stylesheet" href="styles.css" type="text/css" >
 		<script src="aos.js"></script>
 		<script src="scriptes.js"></script>
+		<script src="imakewebthings-waypoints-34d9f6d/lib/jquery.waypoints.js"></script>
 		
 		
 	</head>
 	
 	<body onload="onLoadChangeOpacity()">
+	
+	<div id="background">
+		<div class="navbar">
+	  		<a href="#home">CONTACT</a>
+	  		<a href="#divProjects">PROJECTS</a>
+	  		<a href="#divTop">ABOUT</a>
+		</div>
 		
 		<div id="divTop">
 			<img class="avatar" src="Images/me.png" alt="Me">
@@ -27,8 +35,8 @@
 		</div>
 
 		<div class="intro" id="divIntro">
-			<p class="normal">Hello! I am a undergraduate of unversity of peradeniya, currently pursuing Bsc. Eng in Computer Engineering. I am passionate about Machine Learning and Artificial Inteligence, Softwear and Web Development, Algorithmic programming.</p>
-			<hr style="background-color: rgb(220,220,220);border: 0;height: 1px">
+			<p class="intro">Hello! I am a undergraduate of unversity of peradeniya, currently pursuing Bsc. Eng in Computer Engineering. I am passionate about Machine Learning and Artificial Inteligence, Softwear and Web Development, Algorithmic programming.</p>
+			<!--<hr style="background-color: rgb(220,220,220);border: 0;height: 1px">-->
 			<a class="downloadCV" href="/images/myw3schoolsimage.jpg" download>Download CV</a>
 		</div>
 
@@ -47,94 +55,130 @@
 			<h2 class="main">Skills</h2>
 			<hr style="background-color: rgb(220,220,220);border: 0;height: 1px">
 			<ul class="bargraph">
-				<li class="reddeep" data-aos="fade-right" data-aos-once="false">JAVA</li>
-				<li class="redpink" data-aos="fade-right" data-aos-once="false">C</li>
-				<li class="pink" data-aos="fade-right" data-aos-once="false">Python</li>
-				<li class="orangered" data-aos="fade-right" data-aos-once="false">HTML/CSS</li>
-				<li class="orange" data-aos="fade-right" data-aos-once="false">Javascript</li>
-				<li class="yellow" data-aos="fade-right" data-aos-once="false">MySQL</li>
-				<li class="green" data-aos="fade-right" data-aos-once="false">PHP</li>
-				<li class="greenbright" data-aos="fade-right" data-aos-once="false">Matlab</li>
-				<li class="greenblue" data-aos="fade-right" data-aos-once="false">Arduino</li>
+				<li class="reddeep">JAVA</li>
+				<li class="redpink">C</li>
+				<li class="pink">Python</li>
+				<li class="orangered">HTML/CSS</li>
+				<li class="orange">Javascript</li>
+				<li class="yellow">MySQL</li>
+				<li class="green">PHP</li>
+				<li class="greenbright">Matlab</li>
+				<li class="greenblue">Arduino</li>
 			</ul>
 		</div>
 
-		<div class="content" id="divProjects" data-aos="fade-up" data-aos-duration="1000">
+		<div class="content" id="divProjects" data-aos="fade-up" data-aos-duration="1000" style="min-height: 2000px">
 			<h2 class="main">Projects</h2>
 			<hr style="background-color: rgb(220,220,220);border: 0;height: 1px">
-		</div>
+			<h2 class="main" style="margin-left: 15px;margin-top: 50px;">BAYMAX - Heart Diseases Prediction System</h2>
+			<p class="normal" style="margin-top: 15px;text-align: left;" ><img class="project" src="Images/baymax/baymax.png" alt="baymax" style="margin-top: none;">
+				&nbsp&nbsp&nbsp&nbsp&nbsp This was a group project and our goal was to build a system where users can check whether they have a heart disease by simply inserting some inputs which they can easily measure at home. We assumed that the users have the ability to take measurements like blood pressure, heart rate, height, weight, etc. at home because there are equipment that can be bought from the market that are cheap and easy to use. <br><br>
+				&nbsp&nbsp&nbsp&nbsp&nbsp Since doctors use lots of methods to identify diseases and we have only several user inputs, our goal was to find a pattern between that inputs and the diseases. Our approach was to use machine learning techniques to find a pattern. For that we needed data and to collect data easily, we inserted another part to our system which doctors can use it to store their patient’s data and keep track of them. In return, they have to provide us data (only the medical information without names and other personal data).<br><br>
+				&nbsp&nbsp&nbsp&nbsp&nbsp Since that takes some time(to collect data in that manner) and we wanted do tests to find a pattern we gathered some free data available in the internet and applied different machine learning techniques(Logistic regression , neural network, SVM) using Python and we could achieve an accuracy near 80% in logistic regression model.<br><br>
+				&nbsp&nbsp&nbsp&nbsp&nbsp That made us believe that there should be a pattern between that inputs and the diseases but the lack of data stood in our way. We believe that after launching the site (therefore, we can gather more data) we can find a more efficient and accurate model to predict diseases.
+			</p>
 
-		<div class="content" id="divProjects" data-aos="fade-up" data-aos-duration="1000">
-			<h2 class="main">Projects</h2>
-			<hr style="background-color: rgb(220,220,220);border: 0;height: 1px">
-		</div>
-		
+			<div class="row" style="margin-bottom: 50px">
+				  <div class="column">
+				    <img class="project_sub" src="Images/baymax/baymax.png">
+				    <div class="overlay">Home page of the website</div>
+				  </div>
+				  <div class="column">
+				    <img class="project_sub" src="Images/baymax/b2.png">
+				    <div class="overlay">Login page of the website</div>
+				  </div>
+				  <div class="column">
+				    <img class="project_sub" src="Images/baymax/b3.png">
+				    <div class="overlay">Sub pages</div>
+				  </div>
+				  <div class="column">
+				    <img class="project_sub" src="Images/baymax/b4.png">
+				    <div class="overlay">Sub pages</div>
+				  </div>
+				  <div class="column">
+				    <img class="project_sub" src="Images/baymax/b5.png">
+				    <div class="overlay">Sub pages</div>
+				  </div>
+			</div>
 
-		
-		<!--	
-		<h3>Interests</h3>
-			<ul>
-				<li>Machine Learning/Artificial Intellegence.</li>
-				<li>Web & Softwear Development.</li>
-				<li>Algorithmic Programming.</li>
-			</ul>
+			<hr style="background-color: rgb(220,220,220);border: 0;height: 1px;">
 
-		<h3>Education</h3>
-			<ul>
-				<li>BSc in Computer Engineering, University of Peradeniya, Sri Lanka.</li>
-					<ul>
-						<li>Currently engaged.</li>
-						<li>Current GPA - 3.65.</li>
-					</ul>
-				<li>Dharmaraja College, Kandy, Sri Lanka. (2004 - 2014).</li>
-				<li>St. Sylvesters College, Kandy, Sri Lanka. (2001 - 2003).</li>
-			</ul>
+			<h2 class="main" style="margin-left: 15px;margin-top: 50px;">KRAKEN - An Autonomous Fishing Bot Network</h2>
+			<p class="normal" style="margin-top: 15px;text-align: left;"><img class="project" src="Images/kraken/f1.jpeg" alt="kraken" style="margin-top: none;">
+				&nbsp&nbsp&nbsp&nbsp&nbsp This was a group project and our concept was a small scale network of fishing bots which have a trap attached to each bots. A bot can randomly move in the water into some certain distance and detect whether if any fish is caught to the trap. Those fishing bots are connected to a relay node which can monitor the status of the bots. Also We designed a web application which can monitor the status of multiple relay nodes because one can own multiple relay nodes which can be placed in different places and he/she could be able to monitor the status of their nodes. <br><br>
 
-		<h3>Projects</h3>
-			<ul>
-				<li>BAYMAX - Computer Aided Heart Disease Prediction System.</li>
-					<ul>
-						<li>heart disease prediction system by using Machine Learning.</li>
-						<li>Languages - Python ,MySQL, HTML, PHP.</li>
-					</ul>
-				<li>KRAKEN - Autonomous Fishing Bot.</li>
-				<li>EASYPARK – An Efficient Parking Solution for large parking lots.</li>
-				<li>VOICE OVER SOUND - Transmitting data over ultra sound.</li>
-			</ul>
+				&nbsp&nbsp&nbsp&nbsp&nbsp We made a prototype fishing bot , prototype relay node , and a web application. The technologies, platforms & languages that were used are Arduino IO, Raspberry Pi, MongoDB, NodeJS, 
+				HTML/CSS, Python, C.<br><br><br><br>
 
-		<h3>Mini Projects</h3>
-			<ul>
-				<li>Tic-Tac-Toe Game : a simple game developed in JAVA.</li>
-				<li>Fractals : Multi threaded application for fractal visualization in JAVA.</li>
-				<li>Auction Server : Multi-threaded socket server for stock auctions in JAVA with a GUI.</li>
+			</p>
 
-			</ul>
+			<div class="row" style="margin-bottom: 50px">
+				  <div class="column">
+				    <img class="project_sub" src="Images/kraken/p1.png">
+				    <div class="overlay">Overall design</div>
+				  </div>
+				  <div class="column">
+				    <img class="project_sub" src="Images/kraken/d1.jpg">
+				    <div class="overlay">Bot design</div>
+				  </div>
+				  <div class="column">
+				    <img class="project_sub" src="Images/kraken/d3.jpg">
+				    <div class="overlay">Bot design</div>
+				  </div>
+				  <div class="column">
+				    <img class="project_sub" src="Images/kraken/l3.png">
+				    <div class="overlay">UI of Relay Node</div>
+				  </div>
+				  <div class="column">
+				    <img class="project_sub" src="Images/kraken/w1.png">
+				    <div class="overlay">Web App</div>
+				  </div>
+				  <div class="column">
+				    <img class="project_sub" src="Images/kraken/w2.png">
+				    <div class="overlay">Web App</div>
+				  </div>
+				  <div class="column">
+				    <img class="project_sub" src="Images/kraken/w3.png">
+				    <div class="overlay">Web App</div>
+				  </div>
+				  <div class="column">
+				    <img class="project_sub" src="Images/kraken/w4.png">
+				    <div class="overlay">Web App</div>
+				  </div>
+			</div>
 
-		<h3>Awards and Certificates</h3>
-			<ul>
-				<li>ACES Hackathon 2017 - 3rd Place in Hardware & Network category. </li>
-					<ul> <li>Project - Smart Parking Solution.</li>  </ul>
-				<li>ACES Hackathon 2018 - Most Popular idea in Hardware & Network category. </li>
-					<ul> <li>Project - Voice over Sound. </li> </ul>
-			</ul> 
+			<hr style="background-color: rgb(220,220,220);border: 0;height: 1px;">
 
-		<h3>Extra Curricular</h3>
-			<ul>
-				<li>Member of Science Quiz team in Dharmaraja College Kandy. (2012 - 2014).</li>
-				<li>Committee member of Astronomical Society in Dharmaraja College Kandy. (2013 - 2014).</li>
-				<li>Committee member of Science Society in Dharmaraja College Kandy. (2013 - 2014).</li>
-				<li>Crew member of the drama ‘Listen’ at DRAMSOC - Ceylon Dramatic Society.</li>
-				<li>Sports</li>
-					<ul>
-						<li>Current member of the rugby squad of University of Peradeniya.</li>
-						<li>University half colors for the performance in 2016 , 2017.</li>Inter university Championship; 2017 - Runner up, 2018 - Champions.</ul>
-					</ul>
+			<h2 class="main" style="margin-left: 15px;margin-top: 50px;">EASYPARK – An Efficient Parking Solution for large parking lots</h2>
+			<p class="normal" style="margin-top: 15px;text-align: left;"><img class="project" src="Images/easy_park/d2.jpg" alt="easyPark" style="margin-top: none;">
+				&nbsp&nbsp&nbsp&nbsp&nbsp This was a group project and it won the third place in ACES Hackathon 2017 Hardware & Network category organized by university of Peradeniya. Our goal was to inform users about empty spaces in car parks in busy areas, cities, etc. to minimize the traffic conditions in those busy areas. Our approach was to build a mobile application which can be used by the users  to check the empty spaces in car parks in the interested areas. <br><br>
+				&nbsp&nbsp&nbsp&nbsp&nbsp We built a model carpark (for demonstration purposes) and the mobile application.<br><br><br><br><br><br>
 
-			</ul>
-		-->
+			</p>
+
+			<div class="row" style="margin-bottom: 50px">
+				  <div class="column">
+				    <img class="project_sub" src="Images/easy_park/a3.png">
+				    <div class="overlay">Mobile App</div>
+				  </div>
+				  <div class="column">
+				    <img class="project_sub" src="Images/easy_park/a2.png">
+				    <div class="overlay">Mobile App</div>
+				  </div>
+				  <div class="column">
+				    <img class="project_sub" src="Images/easy_park/a1.png">
+				    <div class="overlay">Mobile App</div>
+				  </div>
+			</div>
+
+
+			<hr style="background-color: rgb(220,220,220);border: 0;height: 1px;">
+
+			<p class="normal">Under Construction! More to come! :)</p>
 		<script>
  			 AOS.init();
 		</script>
+	</div>
 	</body>
 
 </html>
