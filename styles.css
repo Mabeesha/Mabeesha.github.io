@@ -276,7 +276,7 @@ ul.bargraph li.orangered
 {
 	opacity: 1;
 	background: #E28159;
-	max-width:90%;
+	max-width:80%;
 }
  
 ul.bargraph li.orange 
@@ -311,7 +311,7 @@ ul.bargraph li.greenblue
 {
 	opacity: 1;
 	background: #42BDA5;
-	max-width:80%;
+	max-width:60%;
 }
  
 ul.bargraph li.blue 
