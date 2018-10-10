@@ -349,3 +349,61 @@ ul.bargraph li.blue
   	background: #ddd;
   	color: black;
 }
+
+@media screen and (max-width: 500px) 
+{
+	.navbar a 
+	{
+  		margin-left:5px ; 
+  		margin-right:5px ;
+  	}
+	ul.bargraph li.reddeep
+	{
+		max-width:300px;
+	}
+	 
+	ul.bargraph li.redpink 
+	{
+		max-width:300px;
+	}
+	 
+	ul.bargraph li.pink 
+	{
+		max-width:300px;
+	}
+	 
+	ul.bargraph li.orangered 
+	{
+		max-width:240px;
+	}
+	 
+	ul.bargraph li.orange 
+	{
+		max-width:240px;
+	}
+	 
+	ul.bargraph li.yellow 
+	{
+		max-width:240px;
+	}
+	 
+	ul.bargraph li.green 
+	{
+		max-width:210px;
+	}
+	 
+	ul.bargraph li.greenbright 
+	{
+		max-width:210px;
+	}
+	 
+	ul.bargraph li.greenblue 
+	{
+		max-width:180px;
+	}
+	 
+	ul.bargraph li.blue 
+	{
+		max-width:20px;
+	}   
+}
