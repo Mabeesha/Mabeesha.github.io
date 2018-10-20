@@ -1,8 +1,7 @@
 #background
 {
-	background-image: url("Images/bg21.jpg");
+	background-image: url("Images/bg24.png");
 	background-size: 100% 750px;
-	background-repeat: no-repeat;
 	background-color: rgb(239, 244, 252);
 	background-attachment: fixed;
 	position: absolute;
@@ -11,8 +10,13 @@
     right: 0;
     z-index: -100;
     opacity: 0;
-	-webkit-transition: opacity 1s; /* Safari */
+	-webkit-transition: opacity 1s;
     transition: opacity 1s;
+    -webkit-animation: slide 20s linear infinite;
+}
+@-webkit-keyframes slide {
+    from { background-position: 0 0; }
+    to { background-position: -400px 0; }
 }
 #backgroundOverlay
 {
@@ -132,10 +136,6 @@ img.project_sub
 	border: 1px solid #ddd;
     border-radius: 4px;
     padding: 1px;
-}
-
-body
-{
 }
 h1
 {
